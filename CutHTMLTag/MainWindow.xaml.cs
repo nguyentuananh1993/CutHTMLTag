@@ -28,7 +28,7 @@ namespace CutHTMLTag
 
         private void btnConvert_Click(object sender, RoutedEventArgs e)
         {
-
+            runCommand();
         }
 
         private void openFileDialog(TextBox textbox, String filter)
@@ -60,23 +60,47 @@ namespace CutHTMLTag
             }
         }
 
+        
+String strUTF8Text = null;
+ 
+
+
 
         private void runCommand()
         {
-            FileStream stream = File.OpenRead(txtBoxSource.Text);
+            StreamWriter dest = new StreamWriter(txtBoxDestination.Text, true, Encoding.UTF8);
+            StreamReader sr = new StreamReader(txtBoxSource.Text,Encoding.UTF8); 
             Boolean flag = false;
-            char inChar;
-            int myByte;
-            while ((myByte = stream.ReadByte()) != -1)
-            {
-                inChar = Convert.ToChar(myByte);
-                if (inChar.Equals('<'))
+            Boolean flagEnter = false;
+            int j = 0;
+
+            while(true){ // infinit loop
+                j++;
+                String strLine = sr.ReadLine();
+                if (strLine == null) break; 
+              for(int i=0;i<strLine.Length;i++){
+                if (strLine[i].Equals('<')){
                     flag = true;
-                else if (inChar.Equals('>'))
+                    if(flagEnter)
+                        dest.Write("\n");
+                    flagEnter = false;
+                }
+                else if (strLine[i].Equals('>')) {
                     flag = false;
-                
+                    continue;
+                    }
+                if (!flag)
+                {
+                    dest.Write(strLine[i]);
+                    flagEnter = true;
+                }
+              }
+              if(null== strLine) break; // exit point
             }
 
+            sr.Close();
+            dest.Close();
+            Console.WriteLine("akjdfalkdshfalds anhnt %d.\n", j);
         }
 
         private void btnBrowserSource_Click(object sender, RoutedEventArgs e)
