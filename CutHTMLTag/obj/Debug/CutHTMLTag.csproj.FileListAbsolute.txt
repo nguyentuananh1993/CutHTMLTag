@@ -1,0 +1,13 @@
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\bin\Debug\CutHTMLTag.exe.config
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\bin\Debug\CutHTMLTag.exe
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\bin\Debug\CutHTMLTag.pdb
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\obj\Debug\CutHTMLTag.csprojResolveAssemblyReference.cache
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\obj\Debug\MainWindow.baml
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\obj\Debug\MainWindow.g.cs
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\obj\Debug\App.g.cs
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\obj\Debug\CutHTMLTag_MarkupCompile.cache
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\obj\Debug\CutHTMLTag.g.resources
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\obj\Debug\CutHTMLTag.Properties.Resources.resources
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\obj\Debug\CutHTMLTag.csproj.GenerateResource.Cache
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\obj\Debug\CutHTMLTag.exe
+c:\users\nguyen\documents\visual studio 2013\Projects\CutHTMLTag\CutHTMLTag\obj\Debug\CutHTMLTag.pdb
